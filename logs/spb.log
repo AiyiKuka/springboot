@@ -1,0 +1,7 @@
+2019-05-09 20:55:51,389 com.aykk.spb.servlet.SqlExecuteServlet [http-nio-8088-exec-1] (SqlExecuteServlet.java:20) INFO  --> Start my first servlet.
+2019-05-09 20:55:51,403 com.aykk.spb.servlet.SqlExecuteServlet [http-nio-8088-exec-1] (SqlExecuteServlet.java:22) INFO  --> End my first servlet.
+2019-05-09 21:12:10,778 com.aykk.spb.service.ApplicationStartRunner [main] (ApplicationStartRunner.java:14) INFO  --> Start loading your items.
+2019-05-09 21:28:56,587 com.aykk.spb.service.ApplicationStartRunner [main] (ApplicationStartRunner.java:14) INFO  --> Start loading your items.
+2019-05-09 21:50:46,216 com.aykk.spb.service.ApplicationStartRunner [main] (ApplicationStartRunner.java:14) INFO  --> Start loading your items.
+2019-05-09 21:50:52,158 com.aykk.spb.servlet.SqlExecuteServlet [http-nio-8088-exec-1] (SqlExecuteServlet.java:20) INFO  --> Start my first servlet.
+2019-05-09 21:50:52,176 com.aykk.spb.servlet.SqlExecuteServlet [http-nio-8088-exec-1] (SqlExecuteServlet.java:22) INFO  --> End my first servlet.

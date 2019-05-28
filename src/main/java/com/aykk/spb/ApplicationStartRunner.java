@@ -1,4 +1,4 @@
-package com.aykk.spb.service;
+package com.aykk.spb;
 
 import org.apache.log4j.Logger;
 import org.springframework.boot.ApplicationArguments;

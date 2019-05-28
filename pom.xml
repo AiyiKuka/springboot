@@ -41,6 +41,27 @@
 			<artifactId>spring-boot-starter-log4j</artifactId>
 			<version>1.3.8.RELEASE</version>
 		</dependency>
+
+		<!--运用SpringBoot 插件 使用spring-boot-devtools模块的应用,当classpath中的文件有改变时，会自动重启！ -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<optional>true</optional>
+		</dependency>
+
+		<!-- Mysql -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.39</version>
+		</dependency>
+
+		<!-- Spring Boot Mybatis 依赖 -->
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>1.2.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -49,9 +70,9 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-                    <mainClass>com.aykk.spb.SpbApplication</mainClass>
-                </configuration>
-				
+					<mainClass>com.aykk.spb.SpbApplication</mainClass>
+				</configuration>
+
 			</plugin>
 		</plugins>
 	</build>

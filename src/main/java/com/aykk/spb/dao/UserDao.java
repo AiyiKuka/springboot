@@ -23,9 +23,9 @@ public interface UserDao {
 	@Delete("delete from t_user where id=#{id}")
 	void deleteUser(int id);
 
-	@Select("SELECT id,name,age FROM t_user where name=#{userName}")
-	User findByName(@Param("userName") String userName);
+	@Select("select id,name,age from t_user where name=#{name}")
+	User findByName(@Param("name") String userName);
 
-	@Select("SELECT id,name,age FROM t_user")
+	@Select("select id,name,age from t_user")
 	List<User> findAll();
 }

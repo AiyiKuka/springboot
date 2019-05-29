@@ -13,7 +13,7 @@ import com.aykk.spb.bean.User;
 import com.aykk.spb.service.UserService;
 
 @RestController
-@RequestMapping(value = "/user")
+@RequestMapping(value = "/api")
 public class UserRestController {
 	private static final Logger LOGGER = Logger.getLogger(UserRestController.class);
 
@@ -33,7 +33,7 @@ public class UserRestController {
 	}
 
 	@RequestMapping(value = "/user", method = RequestMethod.DELETE)
-	public void delete(@RequestParam(value = "userName", required = true) int userId) {
+	public void delete(@RequestParam(value = "userId", required = true) int userId) {
 		LOGGER.info("Start deleting user.");
 		userService.deleteUser(userId);
 	}

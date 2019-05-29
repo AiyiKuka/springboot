@@ -2,6 +2,7 @@ package com.aykk.spb.service.impl;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,9 +10,10 @@ import com.aykk.spb.bean.User;
 import com.aykk.spb.dao.UserDao;
 import com.aykk.spb.exception.SpbException;
 import com.aykk.spb.service.UserService;
+
 @Service
 public class UserServiceImpl implements UserService {
-
+	private static final Logger LOGGER = Logger.getLogger(UserServiceImpl.class);
 	@Autowired
 	private UserDao userDao;
 
@@ -20,6 +22,7 @@ public class UserServiceImpl implements UserService {
 		try {
 			userDao.addUser(user);
 		} catch (Exception e) {
+			LOGGER.error(e.getMessage(), e);
 			throw new SpbException(e.getMessage(), e);
 		}
 	}
@@ -29,6 +32,7 @@ public class UserServiceImpl implements UserService {
 		try {
 			userDao.updateUser(user);
 		} catch (Exception e) {
+			LOGGER.error(e.getMessage(), e);
 			throw new SpbException(e.getMessage(), e);
 		}
 	}
@@ -38,6 +42,7 @@ public class UserServiceImpl implements UserService {
 		try {
 			userDao.deleteUser(id);
 		} catch (Exception e) {
+			LOGGER.error(e.getMessage(), e);
 			throw new SpbException(e.getMessage(), e);
 		}
 	}
@@ -48,6 +53,7 @@ public class UserServiceImpl implements UserService {
 		try {
 			userInfo = userDao.findByName(userName);
 		} catch (Exception e) {
+			LOGGER.error(e.getMessage(), e);
 			throw new SpbException(e.getMessage(), e);
 		}
 		return userInfo;
@@ -59,6 +65,7 @@ public class UserServiceImpl implements UserService {
 		try {
 			userInfos = userDao.findAll();
 		} catch (Exception e) {
+			LOGGER.error(e.getMessage(), e);
 			throw new SpbException(e.getMessage(), e);
 		}
 		return userInfos;

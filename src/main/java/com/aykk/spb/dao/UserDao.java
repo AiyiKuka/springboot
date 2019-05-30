@@ -11,6 +11,22 @@ import org.apache.ibatis.annotations.Update;
 
 import com.aykk.spb.bean.User;
 
+/**
+ * 
+ * spring data jpa 默认预先生成了一些基本的CURD的方法
+ * 
+ * •mapper : 在接口上添加了这个注解表示这个接口是基于注解实现的CRUD。
+ * <p>
+ * •Results: 返回的map结果集property 表示User类的字段，column 表示对应数据库的字段。
+ * <p>
+ * •Param:sql条件的字段。
+ * <p>
+ * •Insert、Select、Update、Delete:对应数据库的增、查、改、删。
+ * 
+ * 
+ * @author Aiyikuka
+ *
+ */
 @Mapper
 public interface UserDao {
 

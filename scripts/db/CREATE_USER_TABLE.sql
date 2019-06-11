@@ -1,3 +1,7 @@
+create schema springboot;
+
+use springboot;
+
 create table t_user 
 (id int(11) NOT NULL,
  name varchar(20),
